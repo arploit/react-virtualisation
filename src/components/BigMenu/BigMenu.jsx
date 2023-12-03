@@ -33,6 +33,10 @@ const BigMenu = () => {
         MenuListProps={{
           "aria-labelledby": "basic-button",
         }}
+        sx={{
+          height: "30rem",
+          width: "100rem",
+        }}
       >
         {BigLists.map((_listItems, idx) => {
           return (
@@ -51,7 +55,7 @@ const BigMenu = () => {
                     <MenuItem
                       onClick={handleClose}
                       key={`menu-item1-${index}`}
-                    >{`item-${index}-${listItems.authors}`}</MenuItem>
+                    >{`item-${index}-${listItems.title}`}</MenuItem>
                   );
                 }))
               }
